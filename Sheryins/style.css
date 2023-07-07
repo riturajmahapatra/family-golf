@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@900&family=Montserrat:wght@100;300;400;600;700;800;900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +17,7 @@ body {
 
 /* cursor  and blur*/
 
-#cursor{
+#cursor {
     height: 10px;
     width: 10px;
     background-color: #c3fd5e;
@@ -24,7 +25,8 @@ body {
     position: fixed;
     z-index: 99;
 }
-#cursor-blur{
+
+#cursor-blur {
     height: 200px;
     width: 200px;
     background-color: #c3fd5e69;
@@ -108,8 +110,55 @@ video {
     font-weight: 300;
 }
 
-#page2{
+#page2 {
     height: 100vh;
     width: 100%;
     z-index: 10;
+}
+
+#scroller {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+
+#scroller h4 {
+    display: inline-block;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-right: 10px;
+    font-family: gilroy; 
+    color: transparent;
+    transition: all linear 0.8s;
+    -webkit-text-stroke-color: #abdd55;
+    -webkit-text-stroke-width: .6px;
+}
+
+#scroller h4:hover{
+    color: #9bd43860;
+    cursor: pointer;
+}
+
+#scroller-in {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
 }
