@@ -264,7 +264,7 @@ video {
 }
 
 .card:hover {
-    transform: rotate3d(1, 1, 1, 20deg);
+    transform: rotate3d(1, 1, 0, 20deg);
 }
 
 #green-div {
@@ -318,10 +318,69 @@ video {
 
 #img1 {
     position: relative;
-    top: -200px;
+    top: -170px;
 }
 
 #img2 {
     position: relative;
     top: 150px;
+    right: 50px;
+}
+
+#img1:hover {
+    transform: translateY(-50px);
+}
+
+.page3-h1 {
+    z-index: 0;
+    position: relative;
+    text-align: center;
+    font-family: gilroy;
+    color: transparent;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1.5px;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+#page4 {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.elem {
+    height: 55%;
+    width: 30%;
+    overflow: hidden;
+    position: relative; 
+    border-radius: 12px;
+}
+
+.elem h1 {
+    height: 100%;
+    width: 100%;
+    background-color: #c3fd5e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    transition: all ease 0.5s;
+}
+
+.elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.elem:hover h1{
+    color: #fff;
+    background-color: transparent;
 }
