@@ -19,6 +19,20 @@ body {
     width: 100%;
 }
 
+body::-webkit-scrollbar {
+    display: block;
+    background-color: #000;
+    width: 3px;
+    opacity: 0.8;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #c3fd5e;
+    border-radius: 80px;
+    opacity: 0.5;
+}
+
 /* cursor  and blur*/
 
 #cursor {
@@ -368,7 +382,8 @@ video {
 .elem h1 {
     height: 100%;
     width: 100%;
-    background-color: #c3fd5e;
+    background: rgb(57, 170, 50);
+    background: linear-gradient(207deg, rgba(57, 170, 50, 1) 18%, rgba(170, 220, 32, 1) 54%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -417,6 +432,7 @@ video {
     position: relative;
     transition: all ease 0.5s;
 }
+
 #f1 img:hover {
     transform: scale(0.9);
 }
@@ -478,11 +494,13 @@ video {
     bottom: 40px;
     gap: 20px;
     z-index: 9;
-    
+
 }
-.icons i{
+
+.icons i {
     transition: all ease 0.5s;
 }
+
 .icons i:hover {
     color: #000;
     transform: scale(1.2);
