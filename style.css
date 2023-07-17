@@ -8,6 +8,10 @@
     color: #fff;
 }
 
+*::selection {
+    background-color: #fff;
+    color: #c3fd5e;
+}
 
 html,
 body {
@@ -356,8 +360,9 @@ video {
     height: 55%;
     width: 30%;
     overflow: hidden;
-    position: relative; 
+    position: relative;
     border-radius: 12px;
+    top: -100px
 }
 
 .elem h1 {
@@ -380,7 +385,117 @@ video {
     object-fit: cover;
 
 }
-.elem:hover h1{
+
+.elem:hover h1 {
     color: #fff;
     background-color: transparent;
+}
+
+#footer {
+    height: 55vh;
+    width: 100%;
+    background: rgb(57, 170, 50);
+    background: linear-gradient(207deg, rgba(57, 170, 50, 1) 18%, rgba(170, 220, 32, 1) 54%);
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 120px;
+    padding: 0 100px;
+}
+
+#footer img {
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0.8;
+    left: 0;
+}
+
+#f1 img {
+    height: 100px;
+    position: relative;
+    transition: all ease 0.5s;
+}
+#f1 img:hover {
+    transform: scale(0.9);
+}
+
+#f1,
+#f2,
+#f4,
+#f3 {
+    position: relative;
+    width: fit-content;
+    z-index: 9;
+    cursor: pointer;
+}
+
+#f2 h2 {
+    width: 120%;
+    color: black;
+    font-weight: 900;
+    z-index: 9;
+}
+
+#f2 h2:hover {
+    color: #fff;
+}
+
+#f3 h2 {
+    width: 120%;
+    color: black;
+    font-weight: 900;
+    z-index: 9;
+
+}
+
+#f3 h2:hover {
+    color: #fff;
+}
+
+#f4 h3 {
+    color: black;
+    font-weight: 900;
+    cursor: none;
+}
+
+#f4 h2 {
+    margin-top: 20px;
+    color: black;
+    font-weight: 900;
+    transition: all ease 0.5s;
+}
+
+#f4 h2:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.icons {
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    gap: 20px;
+    z-index: 9;
+    
+}
+.icons i{
+    transition: all ease 0.5s;
+}
+.icons i:hover {
+    color: #000;
+    transform: scale(1.2);
+}
+
+.h5 {
+    position: relative;
+    bottom: -5%;
+    left: 16%;
+    font-weight: 400;
+    color: #000;
+}
+
+span {
+    font-size: 1.2rem
 }

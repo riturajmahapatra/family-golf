@@ -47,58 +47,71 @@ gsap.to("#main", {
     }
 })
 
-gsap.from("#about-us img,#about-us-in",{
-    y:50,
-    opacity:0,
-    duration:1,
-    stagger:0.4, 
-    scrollTrigger:{
-        trigger:"#about-us img",
-        scroller:"body",
+gsap.from("#about-us img,#about-us-in", {
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.4,
+    scrollTrigger: {
+        trigger: "#about-us img",
+        scroller: "body",
         // markers:true,
-        scrub:2
-    }      
+        scrub: 2
+    }
 
 })
-gsap.from(".card",{
-    scale:1.1,	
-    opacity:0,
-    duration:1,
-    stagger:0.09,
-    scrollTrigger:{
-        trigger:".card",
-        scroller:"body",
+gsap.from(".card", {
+    scale: 1.1,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.09,
+    scrollTrigger: {
+        trigger: ".card",
+        scroller: "body",
         // markers:true,
-        scrub:0.3
-    }      
+        scrub: 0.3
+    }
 
 })
 
-gsap.from("#img1",{
-    y:-70,
-    x:-70,	
-    duration:1,
-    scrollTrigger:{
-        trigger:"#img1",
-        scroller:"body",
+gsap.from("#img1", {
+    y: -70,
+    x: -70,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#img1",
+        scroller: "body",
         // markers:true,
         start: "top 55%",
         end: "top 45%",
-        scrub:4
-    }      
+        scrub: 4
+    }
 
 })
-gsap.from("#img2",{
-    y:70,
-    x:70,	
-    duration:1,
-    scrollTrigger:{
-        trigger:"#img1",
-        scroller:"body",
+gsap.from("#img2", {
+    y: 70,
+    x: 70,
+    duration: 1,
+    scrollTrigger: {
+        trigger: "#img1",
+        scroller: "body",
         // markers:true,
         start: "top 55%",
         end: "top 45%",
-        scrub:4
-    }      
+        scrub: 4
+    }
+
+})
+gsap.from(".page3-h1", {
+    y: 50,
+    duration: 1.5,
+    scrollTrigger: {
+        trigger: "#img2",
+        scroller: "body",
+        // markers:true,
+        start: "top 55%",
+        end: "top 45%",
+        scrub: 3
+    }
 
 })
